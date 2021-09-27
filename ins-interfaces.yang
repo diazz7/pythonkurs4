@@ -1,0 +1,62 @@
+ module ins-interfaces {
+     yang-version 1.1;
+     
+     namespace
+     "https://ost.ch/ins/yang/ins-interfaces";
+     
+     prefix if;
+     
+     organization
+     "INS Institute for Networked Solutions";
+     
+     contact
+        "Support: <https://ost.ch/ins/>";
+     
+     description
+        "Learn YANG by creating some models here.";
+     
+     revision "2021-09-14" {
+         description
+            "Initial Revision";
+         
+         reference
+            "YANG@INS";
+    }
+    container interfaces {
+
+list interface {
+    key "name";
+    leaf name {
+        type string;
+        mandatory "true";
+        description
+        "Interface name.";
+        }
+
+leaf address {
+    type dotted-quad;
+    mandatory "true";
+    description
+      "Interface IP address. Example value: 10.10.10.1";
+  }
+
+  leaf subnet-mask {
+    type dotted-quad;
+    mandatory "true";
+    description
+      "Interface subnet mask. Example value: 255.255.255.0";
+  }
+
+  leaf enabled {
+    type boolean;
+    default "false";
+    description
+      "Enable or disable the interface. Example value: true";
+  }
+
+
+}
+
+}
+
+}
