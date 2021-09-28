@@ -1,0 +1,15 @@
+R1:
+  hostname: 10.18.10.71
+  platform: ios
+  username: cisco
+  password: cisco
+R2:
+  hostname: 10.18.10.66
+  platform: ios
+  username: cisco
+  password: cisco
+R3:
+  hostname: 10.18.10.72
+  platform: ios
+  username: cisco
+  password: cisco
