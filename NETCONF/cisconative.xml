@@ -1,0 +1,80 @@
+<?xml version="1.0" ?>
+<rpc-reply xmlns="urn:ietf:params:xml:ns:netconf:base:1.0" xmlns:nc="urn:ietf:params:xml:ns:netconf:base:1.0" message-id="urn:uuid:605bb44f-8443-44ff-91c1-c232b516e261">
+	<data>
+		<native xmlns="http://cisco.com/ns/yang/Cisco-IOS-XE-native">
+			<version>17.2</version>
+			<hostname>csr1000v-1</hostname>
+			<interface>
+				<GigabitEthernet>
+					<name>1</name>
+					<ip>
+						<address>
+							<dhcp/>
+						</address>
+						<igmp xmlns="http://cisco.com/ns/yang/Cisco-IOS-XE-igmp">
+							<explicit-tracking>false</explicit-tracking>
+							<proxy-service>false</proxy-service>
+							<unidirectional-link>false</unidirectional-link>
+							<v3lite>false</v3lite>
+						</igmp>
+					</ip>
+					<mop>
+						<enabled>false</enabled>
+						<sysid>false</sysid>
+					</mop>
+					<negotiation xmlns="http://cisco.com/ns/yang/Cisco-IOS-XE-ethernet">
+						<auto>true</auto>
+					</negotiation>
+				</GigabitEthernet>
+				<GigabitEthernet>
+					<name>2</name>
+					<ip>
+						<address>
+							<primary>
+								<address>192.168.0.1</address>
+								<mask>255.255.255.252</mask>
+							</primary>
+						</address>
+						<igmp xmlns="http://cisco.com/ns/yang/Cisco-IOS-XE-igmp">
+							<explicit-tracking>false</explicit-tracking>
+							<proxy-service>false</proxy-service>
+							<unidirectional-link>false</unidirectional-link>
+							<v3lite>false</v3lite>
+						</igmp>
+					</ip>
+					<mop>
+						<enabled>false</enabled>
+						<sysid>false</sysid>
+					</mop>
+					<negotiation xmlns="http://cisco.com/ns/yang/Cisco-IOS-XE-ethernet">
+						<auto>true</auto>
+					</negotiation>
+				</GigabitEthernet>
+				<GigabitEthernet>
+					<name>3</name>
+					<ip>
+						<address>
+							<primary>
+								<address>192.168.0.30</address>
+								<mask>255.255.255.252</mask>
+							</primary>
+						</address>
+						<igmp xmlns="http://cisco.com/ns/yang/Cisco-IOS-XE-igmp">
+							<explicit-tracking>false</explicit-tracking>
+							<proxy-service>false</proxy-service>
+							<unidirectional-link>false</unidirectional-link>
+							<v3lite>false</v3lite>
+						</igmp>
+					</ip>
+					<mop>
+						<enabled>false</enabled>
+						<sysid>false</sysid>
+					</mop>
+					<negotiation xmlns="http://cisco.com/ns/yang/Cisco-IOS-XE-ethernet">
+						<auto>true</auto>
+					</negotiation>
+				</GigabitEthernet>
+			</interface>
+		</native>
+	</data>
+</rpc-reply>
