@@ -161,3 +161,4 @@ Device settings: cisco_ios 10.18.10.72:22
 
 
 2021-09-28 11:48:43,439 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'show ip ospf neighbor'} on 3 hosts
+2021-09-28 13:46:47,488 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'show ip ospf neighbor'} on 3 hosts
